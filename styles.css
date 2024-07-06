@@ -1,53 +1,89 @@
 /* Reset básico */
 * {
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimentos padrão */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
 }
 
 /* Estilos gerais */
 body {
-    font-family: 'Inter', sans-serif; /* Define a família de fontes para o corpo do documento */
-    line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
-    color: #333; /* Cor do texto padrão */
+  font-family: 'Inter', sans-serif; /* Define a família de fontes para o corpo do documento */
+  line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+  color: #333; /* Cor do texto padrão */
 }
 
 .container {
-    width: 90%; /* Largura da container com 90% da largura do viewport */
-    max-width: 1200px; /* Largura máxima da container para telas maiores */
-    margin: 0 auto; /* Centraliza a container horizontalmente */
-    padding: 20px; /* Espaçamento interno da container */
+  width: 90%; /* Largura da container com 90% da largura do viewport */
+  max-width: 1200px; /* Largura máxima da container para telas maiores */
+  margin: 0 auto; /* Centraliza a container horizontalmente */
+  padding: 20px; /* Espaçamento interno da container */
 }
 
 .header {
-    background-color: #4C45B2; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto no cabeçalho */
-    padding: 10px 0; /* Espaçamento interno no cabeçalho */
-    text-align: center; /* Alinhamento do texto centralizado */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve abaixo do cabeçalho */
+  background-color: #4c45b2; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto no cabeçalho */
+  padding: 10px 0; /* Espaçamento interno no cabeçalho */
+  text-align: center; /* Alinhamento do texto centralizado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve abaixo do cabeçalho */
 }
 
 .header-title {
-    font-size: 3rem; /* Tamanho da fonte do título do cabeçalho */
-    font-weight: 700; /* Peso da fonte (negrito) */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    letter-spacing: 2px; /* Espaçamento entre letras */
-    margin-bottom: 10px; /* Margem inferior */
+  font-size: 3rem; /* Tamanho da fonte do título do cabeçalho */
+  font-weight: 700; /* Peso da fonte (negrito) */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  margin-bottom: 10px; /* Margem inferior */
 }
 
 .nav-list {
-    list-style-type: none; /* Remove o estilo padrão da lista */
-    text-align: center; /* Alinha os itens da lista centralizados */
-    margin-top: 20px; /* Margem superior */
+  list-style-type: none; /* Remove o estilo padrão da lista */
+  text-align: center; /* Alinha os itens da lista centralizados */
+  margin-top: 20px; /* Margem superior */
 }
 
 .nav-item {
-    display: inline-block; /* Exibe os itens da lista em linha */
-    margin-right: 20px; /* Margem direita entre os itens */
+  display: inline-block; /* Exibe os itens da lista em linha */
+  margin-right: 20px; /* Margem direita entre os itens */
 }
 
 .nav-link {
-    color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove decoração de texto nos links */
-    font-size: 1.2rem; /* Tamanho da fonte dos links */
-    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove decoração de texto nos links */
+  font-size: 1.2rem; /* Tamanho da fonte dos links */
+  transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+.nav-link:hover {
+  transition: 0.5s;
+  background-color: #e2e2e2;
+  color: #4c45b2;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  background: #4c45b2;
+  color: #fff;
+  padding: 30px;
+  font-weight: 900;
+}
+
+.footer-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.figure-img {
+  border-radius: 30px;
+  margin: 50px 0 50px 0;
+}
+
+.section-produtos {
+  width: 100%;
+  background-color: #ececec;
+}
+
+.promo {
+  background-color: #b94a4a;
+  color: #fff;
 }
