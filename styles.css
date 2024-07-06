@@ -9,6 +9,8 @@ body {
     font-family: 'Inter', sans-serif; /* Define a família de fontes para o corpo do documento */
     line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
     color: #333; /* Cor do texto padrão */
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -16,10 +18,13 @@ body {
     max-width: 1200px; /* Largura máxima da container para telas maiores */
     margin: 0 auto; /* Centraliza a container horizontalmente */
     padding: 20px; /* Espaçamento interno da container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
-    background-color: #4C45B2; /* Cor de fundo do cabeçalho */
+    background-color: #9CDBA6; /* Cor de fundo do cabeçalho */
     color: #fff; /* Cor do texto no cabeçalho */
     padding: 10px 0; /* Espaçamento interno no cabeçalho */
     text-align: center; /* Alinhamento do texto centralizado */
@@ -49,5 +54,93 @@ body {
     color: #fff; /* Cor do texto dos links */
     text-decoration: none; /* Remove decoração de texto nos links */
     font-size: 1.2rem; /* Tamanho da fonte dos links */
-    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+.nav-link:hover {
+    transition: color 0.5s ease;
+    color: #333;
+}
+
+/*-------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    background-color: #DEF9C4;
+}
+
+.figure-img {
+    border-radius: 20px;
+}
+
+/*-------------------------------------*/
+
+#sobre {
+    background-color: #DEF9C4;
+}
+
+.section-description {
+    font-style: italic;
+}
+
+/*-------------------------------------*/
+
+#produtos {
+    background-color: #DEF9C4;
+    text-align: center;
+}
+
+#produtos .container {
+    background-color: #9CDBA6;
+    width: 28%;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.article {
+    padding: 5px;
+}
+
+.article-description {
+    font-style: italic;
+}
+
+/*-------------------------------------*/
+
+#blog {
+    background-color: #DEF9C4;
+}
+
+#blog .container {
+    width: 50%;
+}
+
+/*-------------------------------------*/
+
+.promo {
+    background-color: #DEF9C4;
+    padding-bottom: 30px;
+}
+
+.promo .container {
+    background-color: #9CDBA6;
+    width: 28%;
+    border-radius: 15px;
+    color: #fff;
+}
+
+/*-------------------------------------*/
+
+footer {
+   background-color: #9CDBA6;
+   color: #fff;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
