@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1 class="header-title">Padaria Virtual</h1>
+    <header>
+        <div class="c-header">
+            <div id="logo"><img src="./img/padariaLogo.svg" alt=""></div>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
@@ -22,90 +22,123 @@
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                 </ul>
             </nav>
+            <div class="c-header--search">
+                <input type="text">
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
         </div>
     </header>
     
     <main class="main">
-        <section id="home" class="section home">
-            <div class="container">
-                <h2 class="section-title">Bem-vindo à Padaria Virtual</h2>
-                <p class="section-description">Descubra os melhores pães e doces feitos com amor e carinho.</p>
-                <figure class="figure">
-                    <img class="figure-img" src="padaria.jpg" alt="Imagem da Padaria Virtual">
-                    <figcaption class="figure-caption">Nossa padaria virtual</figcaption>
-                </figure>
-            </div>
+        <section id="home" class="s-home">
+                <!-- <div class="home-container"> -->
+                    <h2 class="section-title">Bem-vindo à Padaria Virtual</h2>
+                    <p class="section-description">Descubra os melhores pães e doces feitos com amor e carinho.</p>
+                <!-- </div> -->
         </section>
-        
-        <section id="sobre" class="section sobre">
-            <div class="container">
-                <h2 class="section-title">Sobre Nós</h2>
-                <p class="section-description">Somos uma padaria dedicada a oferecer produtos frescos e saborosos todos os dias.</p>
+        <aside class="promo">
+            <div class="c-promo">
+                <h2 class="promo-title">Promoções</h2>
+                <ul class="promo-list">
+                    <li class="promo-item">Compre 3 pães e leve 1 grátis!</li>
+                    <li class="promo-item">10% de desconto em bolos às sextas-feiras!</li>
+                </ul>
+            </div>
+        </aside>
+        <section id="sobre" class="c-section sobre">
+            <div class="s-container">
+                <div class="sobre-info">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="section-description">Somos uma padaria dedicada a oferecer produtos frescos e saborosos todos os dias.</p>
+                    <p class="details-content">Nossa padaria começou em 2020 e desde então temos oferecido os melhores produtos de panificação. Nosso compromisso é com a qualidade e a satisfação do cliente.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
                 <details class="details">
                     <summary class="details-summary">Leia mais</summary>
-                    <p class="details-content">Nossa padaria começou em 2020 e desde então temos oferecido os melhores produtos de panificação. Nosso compromisso é com a qualidade e a satisfação do cliente.</p>
+                    <ul>
+                        <li><strong>Ingredientes de Qualidade:</strong> Usamos apenas os melhores ingredientes para garantir que nossos produtos sejam sempre frescos e saborosos.</li>
+                        <li><strong>Receitas Tradicionais:</strong> Respeitamos as tradições da panificação, utilizando receitas que passaram por gerações.</li>
+                        <li><strong>Equipe Dedicada:</strong> Nossa equipe é composta por padeiros experientes e apaixonados pelo que fazem.</li>
+                        <li><strong>Variedade de Produtos:</strong> Oferecemos uma ampla gama de produtos, desde pães artesanais até doces deliciosos.</li>
+                        <li><strong>Ambiente Acolhedor:</strong> Nossa padaria é um lugar acolhedor onde você pode relaxar e desfrutar de um café com amigos.</li>
+                        <li><strong>Compromisso com a Comunidade:</strong> Participamos ativamente da comunidade local, apoiando eventos e causas sociais.</li>
+                        <li><strong>Inovação Constante:</strong> Estamos sempre buscando inovar e trazer novas delícias para nossos clientes.</li>
+                        <li><strong>Satisfação Garantida:</strong> Nosso objetivo é a satisfação total do cliente, garantindo produtos de alta qualidade e excelente atendimento.</li>
+                    </ul>
                 </details>
             </div>
         </section>
         
-        <section id="produtos" class="section produtos">
-            <div class="container">
+        <section id="produtos" class="c-section produtos">
+            <div class="s-container">
                 <h2 class="section-title">Nossos Produtos</h2>
-                <article class="article">
-                    <h3 class="article-title">Pão Francês</h3>
-                    <p class="article-description">O clássico pão francês, crocante por fora e macio por dentro.</p>
-                </article>
-                <article class="article">
-                    <h3 class="article-title">Bolo de Chocolate</h3>
-                    <p class="article-description">Delicioso bolo de chocolate com cobertura cremosa.</p>
-                </article>
-                <article class="article">
-                    <h3 class="article-title">Sonho</h3>
-                    <p class="article-description">Sonho recheado com creme, perfeito para o café da tarde.</p>
-                </article>
+                <div class="c-cards">
+                    <article class="card-produto">
+                        <div class="c-cards--img">
+                            <img src="./img/paes.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="article-title">Pão Francês</h3>
+                            <p class="article-description">O clássico pão francês, crocante por fora e macio por dentro.</p>
+                        </div>
+                    </article>
+                    <article class="card-produto">
+                        <div class="c-cards--img">
+                            <img src="./img/bolodechocolate.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="article-title">Bolo de Chocolate</h3>
+                            <p class="article-description">Delicioso bolo de chocolate com cobertura cremosa.</p>
+                        </div>
+                    </article>
+                    <article class="card-produto">
+                        <div class="c-cards--img">
+                            <img src="./img/sonho.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="article-title">Sonho</h3>
+                            <p class="article-description">Sonho recheado com creme, perfeito para o café da tarde.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="blog" class="section blog">
-            <div class="container">
+        <section id="blog" class="c-section blog">
+            <div class="s-container c-blog">
                 <h2 class="section-title">Blog</h2>
-                <article class="article">
-                    <h3 class="article-title">A História do Pão</h3>
-                    <p class="article-meta">Publicado em <time datetime="2024-06-01">01 de Junho de 2024</time></p>
-                    <p class="article-description">O pão é um alimento antigo que remonta a milhares de anos. Vamos explorar a história fascinante do pão e como ele se tornou um alimento básico em muitas culturas.</p>
+                <article class="article historia-pao">
+                    <div>
+                        <h3 class="article-title">A História do Pão</h3>
+                        <p class="article-meta">Publicado em <time datetime="2024-06-01">01 de Junho de 2024</time></p>
+                        <p class="article-description">O pão é um alimento antigo que remonta a milhares de anos. Vamos explorar a história fascinante do pão e como ele se tornou um alimento básico em muitas culturas.</p>
+                    </div>
                 </article>
-                <article class="article">
-                    <h3 class="article-title">Receita de Bolo de Cenoura</h3>
-                    <p class="article-meta">Publicado em <time datetime="2024-07-01">01 de Julho de 2024</time></p>
-                    <p class="article-description">Aprenda a fazer um delicioso bolo de cenoura com cobertura de chocolate. Esta receita simples vai encantar sua família e amigos.</p>
+                <article class="article receita-bolo">
+                    <div>
+                        <h3 class="article-title">Receita de Bolo de Cenoura</h3>
+                        <p class="article-meta">Publicado em <time datetime="2024-07-01">01 de Julho de 2024</time></p>
+                        <p class="article-description">Aprenda a fazer um delicioso bolo de cenoura com cobertura de chocolate. Esta receita simples vai encantar sua família e amigos.</p>
+                    </div>
                 </article>
             </div>
         </section>
     </main>
-
-    <hr>
-    
-    <aside class="promo">
-        <div class="container">
-            <h2 class="promo-title">Promoções</h2>
-            <p class="promo-description">Confira nossas promoções imperdíveis:</p>
-            <ul class="promo-list">
-                <li class="promo-item">Compre 3 pães e leve 1 grátis!</li>
-                <li class="promo-item">10% de desconto em bolos às sextas-feiras!</li>
-            </ul>
-        </div>
-    </aside>
-
     <footer class="footer">
-        <div class="container">
+        <div class="c-footer">
+            <div class="logo-footer">
+                <img src="./img/padariaLogo.svg" alt="">
+            </div>
             <address class="footer-address">
                 <p class="footer-contact">Contato:</p>
                 <p class="footer-email">Email: <a class="footer-link" href="mailto:contato@padariavirtual.com">contato@padariavirtual.com</a></p>
                 <p class="footer-phone">Telefone: (11) 1234-5678</p>
                 <p class="footer-address">Endereço: Rua dos Pães, 123, São Paulo - SP</p>
             </address>
-            <p class="footer-copy">&copy; 2024 Padaria Virtual. Todos os direitos reservados.</p>
         </div>
+        <p class="footer-copy">&copy; 2024 Padaria Virtual. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
